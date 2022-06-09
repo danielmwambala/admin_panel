@@ -1,0 +1,5 @@
+{
+    "emmet.showSuggestionsAsSnippets": true,
+    "html-css-class-completion.enableEmmetSupport": true,
+    "emmet.triggerExpansionOnTab": true
+}
