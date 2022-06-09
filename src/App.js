@@ -53,7 +53,7 @@ function App() {
                         <Route path='/financial' element="Finacial"></Route>
                         <Route path='/color-mapping' element="Color-mapping"></Route>
                         <Route path='/pyramid' element="Pyramid"></Route>
-                        <Route path='/stackes' element="Stacked"></Route>
+                        <Route path='/stacked' element="Stacked"></Route>
                     </Routes>
                 </div>
             </div>
