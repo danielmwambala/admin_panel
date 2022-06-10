@@ -7,7 +7,7 @@ import { links } from '../data/dummy';
 
 function Sidebar() {
   const activeMenu = true;
-  const activeLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white text-md m-2';
+  const activeLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-orange-700 font-bold text-md m-2';
   const normalLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2';
 
   return (
@@ -18,15 +18,18 @@ function Sidebar() {
             <SiShopware /> <span>Shoppy</span>
           </Link>
           <TooltipComponent content="Menu" position="BottomCenter">
-            <button>
+            <button 
+              type="button" 
+              onClick={()=>{}}
+              className="text-xl rounded-full p-3 hover:bg-light-gray mt-4 block" >
               <MdOutlineCancel />
             </button>
           </TooltipComponent>
         </div>
         <div className="mt-10">
           {links.map((item) => (
-            <div key={item.title} className="text-gray-400 m-3 mt-4 uppercase">
-              <p className="text-gray-400 m-3 uppercase">
+            <div key={item.title} >
+              <p className="text-gray-400 m-3 mt-4 uppercase">
               {item.title}
               </p>
               {item.links.map((link) => (
