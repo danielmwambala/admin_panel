@@ -2,7 +2,13 @@ import React from "react";
 import { FiMinus } from "react-icons/fi";
 import Button from "../components/Button";
 import { SparkLine, Stacked } from "../components";
-import { earningData, SparklineAreaData } from "../data/dummy";
+import {
+  earningData,
+  SparklineAreaData,
+  stackedCustomSeries,
+  stackedPrimaryXAxis,
+  stackedPrimaryYAxis,
+} from "../data/dummy";
 
 function Ecommerce() {
   return (
@@ -107,8 +113,14 @@ function Ecommerce() {
             </div>
 
             <div>
-            
-              <Stacked width="320px" height="360px" />
+              <Stacked
+                id="dashboard-stacked"
+                width="320px"
+                height="360px"
+                stackedCustomSeries={stackedCustomSeries}
+                stackedPrimaryXAxis={stackedPrimaryXAxis}
+                stackedPrimaryYAxis={stackedPrimaryYAxis}
+              />
             </div>
           </div>
         </div>
